@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: italic;
+  background: url('london.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.card {
+  background: rgba(0, 0, 0, 0.904);
+  padding: 28px;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 520px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 20px;
+  font-size: 32px;
+  font-weight: 700;
+  color: #eeaf61;
+}
+
+.clock {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.tile {
+  background: black;
+  padding: 18px 16px;
+  border-radius: 12px;
+  min-width: 96px;
+}
+
+.num {
+  font-size: 32px;
+  font-weight: 700;
+  color: #eeaf61;
+}
+
+.label {
+  margin-top: 6px;
+  font-size: 13px;
+  color: #eeaf61;
+}
+
+@media (max-width: 420px) {
+  .clock {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .tile {
+    min-width: auto;
+  }
+}

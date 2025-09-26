@@ -1,0 +1,92 @@
+@import "https://fonts.googleapis.com/css?family=VT323";
+body {
+  background: #000;
+}
+
+.center {
+  width: auto;
+  height: 55px;
+  padding: 0px 20px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin: -27px 0 0 0;
+}
+
+.effect, .effect * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.effect {
+  font-family: 'VT323', monospace;
+  width: 100%;
+  max-width: 500px;
+  height: 55px;
+  padding: 15px 15px;
+  line-height: 25px;
+  position: relative;
+  margin: 0 auto;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+.effect .object {
+  margin: 0;
+  padding: 0 0 0 28.66px;
+  font-size: 23px;
+  color: #0C0;
+  /*	overflow: hidden; */
+  /*	text-overflow: ellipsis; */
+  /*	white-space:nowrap; */
+  text-shadow: rgba(0, 255, 0, 0.5) 0px 0px 2px, rgba(0, 255, 0, 0.65) 0px 0px 10px;
+}
+.effect .object::before {
+  content: "\003E\003A\00A0";
+  margin-left: -28.66px;
+}
+.effect .object::after {
+  content: "\00A0";
+  width: 5px;
+  height: 100%;
+  background: #0C0;
+  display: inline-block;
+  -moz-animation: pisca-cursor 0.75s infinite linear;
+  -webkit-animation: pisca-cursor 0.75s infinite linear;
+  animation: pisca-cursor 0.75s infinite linear;
+  box-shadow: rgba(0, 255, 0, 0.5) 0px 0px 2px, rgba(0, 255, 0, 0.5) 0px 0px 10px;
+}
+
+@-webkit-keyframes pisca-cursor {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-moz-keyframes pisca-cursor {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-ms-keyframes pisca-cursor {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes pisca-cursor {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
