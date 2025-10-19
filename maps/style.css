@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Victor Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: bold
+  ;
+}
+
+body {
+  background: url("uk-flag.jpg") center/cover no-repeat fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  backdrop-filter: brightness(20%) blur(8px);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.days {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.day-btn {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  font-size: 1.5rem;
+  padding: 10px 40px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.day-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.desc {
+  font-size: 0.9rem;
+  margin-top: 5px;
+  color: #ddd;
+}
+
+.back-arrow {
+  display: inline-block;
+  margin-top: 40px;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.back-arrow:hover {
+  transform: translateY(5px);
+}
